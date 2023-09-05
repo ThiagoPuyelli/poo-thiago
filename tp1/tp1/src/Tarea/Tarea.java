@@ -38,6 +38,10 @@ public class Tarea {
         return prioridad;
     }
 
+    public LocalDate getFinalizacion() {
+        return finalizacion;
+    }
+
     public String getDescripcion () { return descripcion; }
 
     public LocalDate getFecha () { return fecha; }

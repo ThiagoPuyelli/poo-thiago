@@ -1,17 +1,15 @@
-package Libro;
+package Punto6.Libro;
 
 public class Libro {
     private String titulo;
     private String autor;
-    private int cantidad;
     private int paginas;
     private int ejemplares;
     private int ejemplaresPrestados;
 
-    public Libro(String titulo, String autor, int cantidad, int paginas, int ejemplares, int ejemplaresPrestados) {
+    public Libro(String titulo, String autor, int paginas, int ejemplares, int ejemplaresPrestados) {
         this.titulo = titulo;
         this.autor = autor;
-        this.cantidad = cantidad;
         this.paginas = paginas;
         this.ejemplares = ejemplares;
         this.ejemplaresPrestados = ejemplaresPrestados;
@@ -23,10 +21,6 @@ public class Libro {
 
     public void setAutor(String autor) {
         this.autor = autor;
-    }
-
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
     }
 
     public void setPaginas(int paginas) {
@@ -47,10 +41,6 @@ public class Libro {
 
     public String getAutor() {
         return autor;
-    }
-
-    public int getCantidad() {
-        return cantidad;
     }
 
     public int getPaginas() {
@@ -74,5 +64,10 @@ public class Libro {
             ejemplares--;
             ejemplaresPrestados++;
         }
+    }
+
+    public void devolverLibro () {
+        ejemplares++;
+        ejemplaresPrestados--;
     }
 }

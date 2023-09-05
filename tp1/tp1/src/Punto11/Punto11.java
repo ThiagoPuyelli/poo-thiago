@@ -10,14 +10,14 @@ public class Punto11 {
         dic.setPalabra("franco");
         dic.setPalabra("julian");
         dic.setPalabra("chuni");
-        dic.setPalabra("kakona");
+        dic.setPalabra("lucas");
         Jugador p1 = new Jugador(dic);
         Jugador p2 = new Jugador(dic);
 
         p1.agregarPalabra("miqueas");
         p1.agregarPalabra("mique");
         p1.agregarPalabra("franco");
-        p1.agregarPalabra("kakona");
+        p1.agregarPalabra("lucas");
 
         p2.agregarPalabra("miqueas");
         p2.agregarPalabra("mique");

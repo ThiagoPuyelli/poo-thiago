@@ -1,21 +1,21 @@
-package Punto8.Contraseña;
+package Punto8.Contrasenia;
 
 import java.util.Random;
 
-public class Contraseña {
+public class Contrasenia {
     public static String generar () {
         return generar(8);
     }
 
     public static String generar (int longitud) {
         String valores = "123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
-        String contraseña = "";
+        String contrasenia = "";
         Random random = new Random();
         for (int i = 0;i < longitud;i++) {
             int numeroRandom = random.nextInt(valores.length());
-            contraseña += valores.charAt(numeroRandom);
+            contrasenia += valores.charAt(numeroRandom);
         }
-        return contraseña;
+        return contrasenia;
     }
 
     public static String generarFuerte () { return generarFuerte(8); }
