@@ -37,11 +37,7 @@ public class Ecuacion {
     }
 
     private double calcularRaiz (double terminoRai, boolean positive) {
-        if (positive) {
-            return (-b + Math.sqrt(terminoRai))/ (2 * a);
-        } else {
-            return (-b - Math.sqrt(terminoRai))/ (2 * a);
-        }
+        return positive ? (-b + Math.sqrt(terminoRai))/ (2 * a) : (-b - Math.sqrt(terminoRai))/ (2 * a);
     }
 
     public ArrayList<Double> raices () {
